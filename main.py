@@ -1,12 +1,34 @@
 import random
 import uuid
 
-AUTHORS = ["Leo Tolstoy", "George Orwell", "J.K. Rowling", "Mark Twain"]
-TITLES = ["The Lost World", "Shadows of Tomorrow", "The Last Horizon"]
-GENRES = ["Fiction", "Mystery", "Sci-Fi", "Fantasy"]
+AUTHORS =        ["Leo Tolstoy", "George Orwell", "J.K. Rowling", "Mark Twain"]
+TITLES =          ["The Lost World", "Shadows of Tomorrow", "The Last Horizon"]
+GENRES =          ["Fiction", "Mystery", "Sci-Fi", "Fantasy"]
 
 
-class Book:
+class Book:                                                 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     def __init__(self, title: str, author: str, year: int, pages: int, genre: str, isbn: str):
         self.title = title
         self.author = author
@@ -19,7 +41,7 @@ class Book:
         return f"Book(title={self.title!r}, author={self.author!r}, year={self.year})"
 
 
-def generate_book() -> Book:
+def generate_book(    ) -> Book:
     return Book(
         title=random.choice(TITLES),
         author=random.choice(AUTHORS),
